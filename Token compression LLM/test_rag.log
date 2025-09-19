@@ -1,0 +1,18 @@
+2025-09-19 16:16:27,634 - INFO - Starting interactive RAG testing
+2025-09-19 16:16:28,143 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-09-19 16:16:33,844 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-09-19 16:16:33,845 - INFO - Using embedding model: local:BAAI/bge-small-en-v1.5
+2025-09-19 16:16:33,845 - INFO - Creating new index...
+2025-09-19 16:22:01,077 - INFO - Starting interactive RAG testing
+2025-09-19 16:22:01,465 - INFO - Load pretrained SentenceTransformer: BAAI/bge-small-en-v1.5
+2025-09-19 16:22:03,537 - INFO - 2 prompts are loaded, with the keys: ['query', 'text']
+2025-09-19 16:22:03,540 - INFO - Using embedding model: local:BAAI/bge-small-en-v1.5
+2025-09-19 16:22:03,540 - ERROR - Error loading index: Index path not found: full_index
+2025-09-19 16:22:03,540 - ERROR - An error occurred: Index path not found: full_index
+Traceback (most recent call last):
+  File "/Users/linnettuscano/Desktop/Token compression LLM/test_rag.py", line 272, in main
+    index = load_index(args.index_path, logger)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/linnettuscano/Desktop/Token compression LLM/test_rag.py", line 50, in load_index
+    raise FileNotFoundError(f"Index path not found: {index_path}")
+FileNotFoundError: Index path not found: full_index
